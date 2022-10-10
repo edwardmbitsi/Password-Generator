@@ -50,3 +50,8 @@ body{
  border: none;
  cursor: pointer;
 } 
+
+.pw:hover button{
+ opacity: 1;
+ transform: translate(0,-80%);
+} 
