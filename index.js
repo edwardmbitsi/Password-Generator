@@ -10,3 +10,6 @@ const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
 const symbol ="~!@#$%^&*()_+=|";
+function getLowercase() {
+ return lowerLetters[Math.floor(Math.random() * lowerLetters.length)];
+ }
