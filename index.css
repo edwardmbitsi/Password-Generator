@@ -13,3 +13,9 @@ body{
  justify-content: center;
  min-height: 100vh;
 }
+
+.pw-container{
+ width: 400px;
+ background-color: rgb(69, 17, 118);
+ box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+} 
