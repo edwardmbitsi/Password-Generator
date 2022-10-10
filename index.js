@@ -9,3 +9,4 @@ const numberEl = document.getElementById("number");
 const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
+const symbol ="~!@#$%^&*()_+=|";
