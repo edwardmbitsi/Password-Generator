@@ -19,3 +19,7 @@ body{
  background-color: rgb(69, 17, 118);
  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
 } 
+
+.pw-header{
+ padding: 1rem;
+} 
