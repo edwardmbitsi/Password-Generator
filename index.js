@@ -8,3 +8,4 @@ const generateEl = document.getElementId("generate");
 const numberEl = document.getElementById("number");
 const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
+const numbers = "0123456789";
