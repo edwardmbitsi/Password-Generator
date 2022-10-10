@@ -59,3 +59,10 @@ body{
 .pw-body{
  padding: 0 1rem 1rem;
 } 
+
+.form-control{
+ color:#eee;
+ display:flex:
+ justify-content: space-between;
+ margin: 0.75rem 0;
+} 
