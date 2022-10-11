@@ -13,3 +13,6 @@ const symbol ="~!@#$%^&*()_+=|";
 function getLowercase() {
  return lowerLetters[Math.floor(Math.random() * lowerLetters.length)];
  }
+ function getUppercase() {
+ return upperLetters[Math.floor(Math.random()  *
+ }
