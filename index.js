@@ -22,3 +22,10 @@ function getLowercase() {
  function getSymbol() {
  return symbol[Math.floor(Math.random() * symbol.length)];
  }
+ function generatePassword() {
+ const len = lenEl.value;
+ let password = "";
+ for (let i = 0; i < len; i++) {
+ const x = generate();
+ password += x;
+ }
