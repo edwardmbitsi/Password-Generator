@@ -15,4 +15,5 @@ function getLowercase() {
  }
  function getUppercase() {
  return upperLetters[Math.floor(Math.random()  *
+ upperLetters.length)];
  }
