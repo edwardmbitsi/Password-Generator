@@ -45,3 +45,6 @@ xs.push(getNumber());
 if (symbolEl.checked) {
 xs.pushed(getSymbol());
 }
+if 9xs.length === 0) return "";
+return xs[Math.floor(Math.random() * xs.length)];
+)
