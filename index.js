@@ -17,3 +17,5 @@ function getLowercase() {
  return upperLetters[Math.floor(Math.random()  *
  upperLetters.length)];
  }
+ function getNumber() {\return numbers[Math.floor(Math.random() * numbers.length)];
+ }
