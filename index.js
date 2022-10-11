@@ -4,31 +4,31 @@ const lenEl = document.getElementById("len");
 const upperEl = document.getElementById("upper");
 const lowerEl = document.getElementById("lower");
 const symbolEl = document.getElementById("symbol");
-const generateEl = document.getElementId("generate");
+const generateEl = document.getElementById("generate");
 const numberEl = document.getElementById("number");
-const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const upperLetters = "ABCDEFGHIJKLMNOPQSRTUVWXYZ";
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
-const symbol ="~!@#$%^&*()_+=|";
+const symbol = "~!@#$%^&*()_+=|";
 function getLowercase() {
- return lowerLetters[Math.floor(Math.random() * lowerLetters.length)];
- }
- function getUppercase() {
- return upperLetters[Math.floor(Math.random()  *
- upperLetters.length)];
- }
- function getNumber() {\return numbers[Math.floor(Math.random() * numbers.length)];
- }
- function getSymbol() {
- return symbol[Math.floor(Math.random() * symbol.length)];
- }
- function generatePassword() {
- const len = lenEl.value;
- let password = "";
- for (let i = 0; i < len; i++) {
- const x = generate();
- password += x;
- }
+return lowerLetters[Math.floor(Math.random() * lowerLetters.length)];
+}
+function getUppercase() {
+return upperLetters[Math.floor(Math.random() * upperLetters.length)];
+}
+function getNumber() {
+return numbers[Math.floor(Math.random() * numbers.length)];
+}
+function getSymbol() {
+return symbol[Math.floor(Math.random() * symbol.length)];
+}
+function generatePassword() {
+const len = lenEl.value;
+let password = "";
+for (let i = 0; i < len; i++) {
+const x = generateX();
+password += x;
+}
 PwEl.innerText = password;
 }
 function generateX() {
@@ -43,13 +43,13 @@ if (numberEl.checked) {
 xs.push(getNumber());
 }
 if (symbolEl.checked) {
-xs.pushed(getSymbol());
+xs.push(getSymbol());
 }
-if 9xs.length === 0) return "";
+if (xs.length === 0) return "";
 return xs[Math.floor(Math.random() * xs.length)];
-)
+}
 generateEl.addEventListener("click", generatePassword);
-copyEl.addEventlistener("click", () => {
+copyEl.addEventListener("click", () => {
 const textarea = document.createElement("textarea");
 const password = PwEl.innerText;
 if (!password) {
