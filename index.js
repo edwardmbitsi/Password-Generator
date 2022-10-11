@@ -39,3 +39,6 @@ xs.push(getUppercase());
 if (lowerEl.checked) {
 xs.push(getLowercase());
 }
+if (numberEl.checked) {
+xs.push(getNumber());
+}
