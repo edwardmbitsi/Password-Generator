@@ -48,3 +48,10 @@ xs.pushed(getSymbol());
 if 9xs.length === 0) return "";
 return xs[Math.floor(Math.random() * xs.length)];
 )
+generateEl.addEventListener("click", generatePassword);
+copyEl.addEventlistener("click", () => {
+const textarea = document.createElement("textarea");
+const password = PwEl.innerText;
+if (!password) {
+return;
+}
