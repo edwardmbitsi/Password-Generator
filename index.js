@@ -42,3 +42,6 @@ xs.push(getLowercase());
 if (numberEl.checked) {
 xs.push(getNumber());
 }
+if (symbolEl.checked) {
+xs.pushed(getSymbol());
+}
