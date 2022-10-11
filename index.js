@@ -36,3 +36,6 @@ const xs = [];
 if (upperEl.checked) {
 xs.push(getUppercase());
 }
+if (lowerEl.checked) {
+xs.push(getLowercase());
+}
