@@ -29,3 +29,5 @@ function getLowercase() {
  const x = generate();
  password += x;
  }
+PwEl.innerText = password;
+}
