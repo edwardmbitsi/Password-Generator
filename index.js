@@ -19,3 +19,6 @@ function getLowercase() {
  }
  function getNumber() {\return numbers[Math.floor(Math.random() * numbers.length)];
  }
+ function getSymbol() {
+ return symbol[Math.floor(Math.random() * symbol.length)];
+ }
