@@ -31,3 +31,8 @@ function getLowercase() {
  }
 PwEl.innerText = password;
 }
+function generateX() {
+const xs = [];
+if (upperEl.checked) {
+xs.push(getUppercase());
+}
