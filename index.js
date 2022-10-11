@@ -55,3 +55,10 @@ const password = PwEl.innerText;
 if (!password) {
 return;
 }
+textarea.value = password;
+document.body.appendChild(textarea);
+textarea.select();
+document.execCommand("copy");
+textarea.remove();
+alert("password copied to clipboard");
+});
