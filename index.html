@@ -1,44 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>password Generator</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
-   <div class="pw-container">
-     <div class="pw-header">
-        <div class="pw">
-           <span id="pw"> Password Here</span>
-           <button id="copy">Copy</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Edward Mbitsi</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://github.com/edwardmbitsi/edwardmbitsi" class="link"
+          >EM.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Edward Mbitsi.</span></h1>
+        <h2 class="about__role">A Front end Developer.</h2>
+        <p class="about__desc">
+          I have a passion for coding and very good at problem solving. I work well around teams and quite as good working alone. Feel free to contact me.
+        </p>
+
+        <div class="about__contact center">
+          <a href="files/EDWARD MBITSI CV_.pdf">
+            <span class="btn btn--outline">CV</span>
+          </a>
+
+          <a
+            href="https://github.com/edwardmbitsi"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/edward-mbitsi-9a8190227/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
         </div>
+      </div>
+
+      <!-- Projects -->
+      
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Weather App</h3>
+            <p class="project__description">
+             A website that shows the weather of a searched location, using the open weather API.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
+
+            <a
+              href="https://github.com/edwardmbitsi/Weather-App"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://edwardmbitsi.github.io/Weather-App/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          
+           <div class="project">
+            <h3>Form Validator</h3>
+            <p class="project__description">
+              A simple registration form. Validating users through JavaScript.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
+
+            <a
+              href="https://github.com/edwardmbitsi/Form-Validator"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://edwardmbitsi.github.io/Form-Validator/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Notes App</h3>
+            <p class="project__description">
+             This app allows you to create, delete and edit notes.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Javascript</li>
+              <li class="project__stack-item">Css</li>
+              <li class="project__stack-item">Html</li>
+            </ul>
+
+            <a
+              href="https://github.com/edwardmbitsi/Notes-App"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://edwardmbitsi.github.io/Notes-App/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <section id="projects" class="section projects">
+        
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Simple Calculator</h3>
+            <p class="project__description">
+              This is a simple calculator app for performing arithmetic equations.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
+
+            <a
+              href="https://github.com/edwardmbitsi/Simple-Calculator"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://edwardmbitsi.github.io/Simple-Calculator/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Wire Cart</h3>
+            <p class="project__description">
+             This is a website about an online store, the design was inspired by dribble.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Html</li>
+              <li class="project__stack-item">Javascript</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
+
+            <a
+              href="https://github.com/edwardmbitsi/Wire-Cart"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://edwardmbitsi.github.io/Wire-Cart/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Quote App</h3>
+            <p class="project__description">
+              This is a project where users can create quotes.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Angular TypeScript</li>
+              <li class="project__stack-item">Css</li>
+              <li class="project__stack-item">Html</li>
+            </ul>
+
+            <a
+              href="https://github.com/edwardmbitsi/Angular-week-1"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://edwardmbitsi.github.io/Angular-week-1/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        </section>
+
+        <section id="projects" class="section projects">
+        
+
+          <div class="projects__grid">
+            <div class="project">
+              <h3>E commerce</h3>
+              <p class="project__description">
+                This is the front end of an online store selling sports wear.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">HTML</li>
+                <li class="project__stack-item">JavaScript</li>
+                <li class="project__stack-item">CSS</li>
+              </ul>
+  
+              <a
+                href="https://github.com/edwardmbitsi/E-commerce"
+                aria-label="source code"
+                class="link link--icon"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://edwardmbitsi.github.io/E-commerce/"
+                aria-label="live preview"
+                class="link link--icon"
+              >
+                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+  
+            <div class="project">
+              <h3>E Talk</h3>
+              <p class="project__description">
+                This is an app where users can come and talk to specialist about anything in particular and even get advice.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">Html</li>
+                <li class="project__stack-item">Javascript</li>
+                <li class="project__stack-item">CSS</li>
+              </ul>
+  
+              <a
+                href="https://github.com/edwardmbitsi/E-talk"
+                aria-label="source code"
+                class="link link--icon"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://edwardmbitsi.github.io/E-talk/"
+                aria-label="live preview"
+                class="link link--icon"
+              >
+                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+  
+            <div class="project">
+              <h3>Password Generator</h3>
+              <p class="project__description">
+                This site generates random passwords for users according to specific selections.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">Html</li>
+                <li class="project__stack-item">Css</li>
+                <li class="project__stack-item">JavaScript</li>
+              </ul>
+  
+              <a
+                href="https://github.com/edwardmbitsi/Password-Generator"
+                aria-label="source code"
+                class="link link--icon"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://edwardmbitsi.github.io/Password-Generator/"
+                aria-label="live preview"
+                class="link link--icon"
+              >
+                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          </section>
+        
+      <section id="projects" class="section projects">
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Food Palace</h3>
+            <p class="project__description">
+              This is a website about a restaurant, it showcases a menu with search filters.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
+
+            <a
+              href="https://github.com/edwardmbitsi/Food-Palace"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://edwardmbitsi.github.io/Food-Palace/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Photography Portfolio</h3>
+            <p class="project__description">
+             This is a porfolio website for a photographer.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Html</li>
+              <li class="project__stack-item">Javascript</li>
+              <li class="project__stack-item">CSS</li>
+            </ul>
+
+            <a
+              href="https://github.com/edwardmbitsi/photographyportfolio"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://edwardmbitsi.github.io/photographyportfolio/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Hero Squad</h3>
+            <p class="project__description">
+              This is a poject about super heroes, a user can create a super hero squad and add heroes to it.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Java Spark</li>
+              <li class="project__stack-item">Css</li>
+              <li class="project__stack-item">Handlebars</li>
+            </ul>
+
+            <a
+              href="https://github.com/edwardmbitsi/Hero-Squad"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://edward-hero-app.herokuapp.com/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">TypeScript</li>
+          <li class="skills__list-item btn btn--plain">Android</li>
+          <li class="skills__list-item btn btn--plain">Spark</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:mbitsiedward@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/edwardmbitsi/edwardmbitsi"
+        class="link footer__link"
+      >
+        Created By Edward Mbitsi
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
     </div>
-<div class="pw-body">
-   <div class="form-control">
-     <lable for="length">Password Length</lable>
-      <input id="len" value="10" type="number" min="8" max="30">
-   </div>
-<div class="form-control">
-  <lable for="upper">Contain Uppercase Letters</lable>
-    <input id="upper" type="checkbox">
-</div>
-<div class="form-control">
-  <lable for="lower">Contain Lowercase Letters</lable>
-    <input id="lower" type="checkbox">
-</div>
-<div class="form-control">
-  <lable for="number">Contain Numbers </lable>
-     <input id="number" type="checkbox">
-</div>
-<div class="form-control">
-   <lable for="symbol">Contain Symbol</lable>
-     <input id="symbol" type="checkbox">
-</div>
-<button class="generate" id="generate">Generate Password</button>
-</div>
-</div>
-<script src="index.js"></script>
-</body>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
